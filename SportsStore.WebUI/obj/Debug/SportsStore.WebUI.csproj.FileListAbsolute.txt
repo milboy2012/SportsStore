@@ -50,3 +50,7 @@ D:\git\SportsStore\SportsStore\SportsStore.WebUI\bin\ru\System.Web.Mvc.resources
 D:\git\SportsStore\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.csprojResolveAssemblyReference.cache
 D:\git\SportsStore\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.dll
 D:\git\SportsStore\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.pdb
+D:\git\SportsStore\SportsStore\SportsStore.WebUI\bin\EntityFramework.dll
+D:\git\SportsStore\SportsStore\SportsStore.WebUI\bin\EntityFramework.xml
+D:\git\SportsStore\SportsStore\SportsStore.WebUI\bin\EntityFramework.SqlServer.dll
+D:\git\SportsStore\SportsStore\SportsStore.WebUI\bin\EntityFramework.SqlServer.xml
