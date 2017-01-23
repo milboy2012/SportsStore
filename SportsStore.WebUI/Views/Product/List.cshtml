@@ -1,7 +1,8 @@
 ﻿@model SportsStore.WebUI.Models.ProductsListViewModel
 
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Products";
 }
 
 <!DOCTYPE html>
@@ -12,18 +13,14 @@
     <title>List</title>
 </head>
 <body>
-<div>
-    @foreach (var p in Model.Products)
-    {
-        <div class="item">
-            <h3>@p.Name</h3>
-            @p.Description
-            <h4>@p.Price.ToString("c")</h4>
+    <div>
+        @foreach (var p in Model.Products)
+        {
+            Html.RenderPartial("ProductsSummary",p);
+        }
+        <div class="pager">
+            @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { page = x }))
         </div>
-    }
-    <div class="pager">
-        @Html.PageLinks(Model.PagingInfo, x=>Url.Action("List", new {page = x}))
     </div>
-</div>
 </body>
 </html>
