@@ -22,9 +22,9 @@ namespace SportsStore.WebUI.Controllers
         {
             Product product = repository.Products
                 .FirstOrDefault(p => p.ProductID == productId);
-            if (product==null)
+            if (product!=null)
             {
-                GetCart().AddItem(product,1);
+                GetCart().AddIthem(product,1);
             }
             return RedirectToAction("Index", new {returnUrl});
         }
@@ -34,7 +34,7 @@ namespace SportsStore.WebUI.Controllers
             Product product = repository.Products.FirstOrDefault(p => p.ProductID == productId);
             if (product!=null)
             {
-                GetCart.RemoveLine(product);
+                GetCart().RemoveLine(product);
             }
             return RedirectToAction("Index", new {returnUrl});
         }
